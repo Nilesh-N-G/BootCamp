@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #cccccc36;
+    }
+
+    .box{
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-container {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .image{
+      width: 150px;
+      margin-right: 20px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input {
+      margin-bottom: 25px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+
+    #btn:hover {
+      background-color: #0056b3 !important;
+    }
+  </style>
+</head>
+<body style="margin: 0;padding: 0;">
+  <div class="container">
+    <div class="box">
+    <div>Login Page</div>
+    <div class="form-container">
+      <img class="image" src="./img1.jpg" alt="Registration Image">
+      <div>
+        <form class="form">
+          <input class="input" type="email" id="email" placeholder="Email">
+          <input class="input" type="password" id="password" placeholder="Password">
+          <button type="button" id="btn" onclick="loginuser()" style="padding: 10px;background-color: #005eff;color: #fff;border: none;border-radius: 5px;cursor: pointer;">Login</button>
+        </form>
+      </div>
+    </div>
+</div>
+  </div>
+
+  <script>
+    function loginuser(){
+      alert("Login Successfull");
+      window.location.href = "loginsuccess.html";
+    }
+  </script>
+</body>
+</html>
